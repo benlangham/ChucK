@@ -162,7 +162,6 @@ fun void adsr() {
 	.4 => sqr.gain;
   .06 => r.mix;
 
-	// infinite time-loop
 	for( 0 => int count; count < 48 ; count++ )
 	{
 	    // choose freq
@@ -193,7 +192,6 @@ fun void imp1(int speed) {
   	0.1 => i.gain;
   	0.2 => r.gain;
 
-  	// infinite time-loop
   	for( 0 => int count; count < 128 ; count++ )
   	{
   	    // set the current sample/impulse
@@ -220,7 +218,6 @@ fun void imp2(int speed) {
   	0.1 => i.gain;
   	0.2 => r.gain;
 
-  	// infinite time-loop
   	for( 0 => int count; count < 128 ; count++ )
   	{
   	    // set the current sample/impulse
@@ -248,7 +245,6 @@ fun void imp3(int speed) {
   	0.2 => r.gain;
     0 => int count;
 
-  	// infinite time-loop
   	for( 0 => int count; count < 128 ; count++ )
   	{
   	    // set the current sample/impulse
@@ -275,7 +271,6 @@ fun void noise(int mix) {
   	0.01 => ng.gain;
   	(0.02 * mix) => r.mix;
 
-  	// infinite time-loop
   	for( 0 => int count; count < 20 ; count++ )
   	{
   	    // sweep the filter resonant frequency
@@ -304,7 +299,6 @@ fun void click() {
       0.5 => ec1.mix;
       0.2 => ec2.mix;
 
-  		// infinite time-loop
 	for( 0 => int count; count < 32 ; count++ )
 	{
 		// set a, d, s, and r
